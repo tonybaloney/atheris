@@ -33,6 +33,10 @@ actually
 However, some too-big are decoded - but
 [to the wrong numbers](https://github.com/ultrajson/ultrajson/issues/440).
 
+### CPython PEG Parser
+
+Atheris found a [bug](https://github.com/python/cpython/issues/90863) caused by exponential backtracking for unclosed braces in Python 3.9+. This bug would cause the Python interpreter to hang for exponentially-long periods of time. 
+
 ## Unicode Bugs
 
 ### Same URL, Different Websites
